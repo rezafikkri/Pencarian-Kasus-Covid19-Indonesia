@@ -1,0 +1,22 @@
+{
+  "name": "pencariankasuscovidindonesia",
+  "version": "1.0.0",
+  "description": "Pencarian Kasus Covid Indonesia, app ini merupakan projek submission kelas Fundamental Frontend Web Development di Dicoding",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezafikkri/PencarianStatusCovidIndo.git"
+  },
+  "keywords": [
+    "Covid19"
+  ],
+  "author": "Reza Sariful Fikri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rezafikkri/PencarianStatusCovidIndo/issues"
+  },
+  "homepage": "https://github.com/rezafikkri/PencarianStatusCovidIndo#readme"
+}
