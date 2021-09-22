@@ -1,4 +1,4 @@
-# Pencarian Status Covid Indonesia :smail
+# Pencarian Status Covid Indonesia :information_source:
 Bismillah, Assalamu'alaikum Warohmatulloh Wabarokatuh.
 Pencarian Status Covid Indonesia, app ini merupakan projek submission kelas Fundamental Frontend Development di Dicoding
 
