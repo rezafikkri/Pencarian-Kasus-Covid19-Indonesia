@@ -15,13 +15,6 @@ module.exports = merge(common, {
                     },
                 },
             },
-            {
-                test: /License.txt$/i,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'font/open-sans/[base]',
-                },
-            },
         ],
     },
 });

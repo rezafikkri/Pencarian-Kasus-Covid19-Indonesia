@@ -15,10 +15,24 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
+                test: /License.txt$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'font/open-sans/[base]',
+                },
+            },
+            {
                 test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'font/open-sans/[base]',
+                },
+            },
+            {
+                test: /favicon\.ico$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: '[base]',
                 },
             },
         ],
