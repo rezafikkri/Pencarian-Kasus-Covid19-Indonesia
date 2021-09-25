@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Reza Admin Logo" src="https://github.com/rezafikkri/Pencarian-Status-Covid-Indonesia/blob/master/src/img/logo.svg" width="450">
+  <img alt="Reza Admin Logo" src="https://github.com/rezafikkri/Pencarian-Status-Covid-Indonesia/blob/master/src/img/logo.svg" width="200">
 </p>
 
 <h2 align="center">Pencarian Status Covid19 Indonesia</h2>
