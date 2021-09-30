@@ -12,20 +12,13 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader'],
+                use: ['style-loader', 'css-loader'],
             },
             {
-                test: /License.txt$/i,
+                test: /\.(woff|woff2|eot|ttf|otf|svg|txt)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'font/open-sans/[base]',
-                },
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'font/open-sans/[base]',
+                    filename: 'font/Nunito/[base]',
                 },
             },
             {
@@ -33,6 +26,13 @@ module.exports = {
                 type: 'asset/resource',
                 generator: {
                     filename: '[base]',
+                },
+            },
+            {
+                test: /\.png$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'img/[base]',
                 },
             },
         ],

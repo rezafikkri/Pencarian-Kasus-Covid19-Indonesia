@@ -1,5 +1,10 @@
 import './img/favicon.ico';
-import './font/open-sans-fontfacekit/Apache License.txt';
+import './img/logo.png';
+import './font/Work_Sans/OFL.txt';
 import './css/main.css';
 
-console.log('ini test');
+import renderLineChart from './js/view/chart.js';
+
+document.addEventListener('DOMContentLoaded', (e) => {
+    renderLineChart();
+});

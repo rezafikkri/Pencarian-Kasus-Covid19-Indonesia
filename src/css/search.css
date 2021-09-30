@@ -1,0 +1,19 @@
+.btn-search, .form-search {
+    border-color: #F7FBFB;
+    background-color: #F7FBFB;
+}
+
+.btn-search:focus, .form-search:focus {
+    border-color: #6ED8CC;
+    box-shadow: 0 0 0 0.25rem rgba(51,193,177,.25);
+}
+
+.btn-search {
+    color: var(--pkci-dark);
+}
+
+.btn-search:hover {
+    background-color: var(--pkci-green);
+    border-color: var(--pkci-green);
+    color: #fff;
+}

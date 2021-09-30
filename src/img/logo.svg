@@ -1,120 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   id="Layer_1"
-   data-name="Layer 1"
-   viewBox="0 0 530 510"
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
    version="1.1"
-   sodipodi:docname="logo.svg"
-   width="530"
-   height="510"
+   id="svg5"
    inkscape:version="1.1 (1:1.1+202106031931+af4d65493e)"
-   inkscape:export-filename="/home/reza/PROGRAMMING/htdocs/Pencarian-Kasus-Covid19-Indonesia/src/img/logo.png"
-   inkscape:export-xdpi="45"
-   inkscape:export-ydpi="45"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/reza/PROGRAMMING/htdocs/Pencarian-Kasus-Covid19-Indonesia/src/img/favicon.png"
+   inkscape:export-xdpi="3.8822346"
+   inkscape:export-ydpi="3.8822346"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <path
-     id="path33461"
-     style="fill:#1e303e;fill-opacity:1;stroke-width:3.14429;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
-     d="m 202.31058,12.927738 c -51.73315,-0.0018 -101.34802,20.547812 -137.929673,57.127866 -76.17506,76.174546 -76.17506,199.678466 0,275.853006 64.411913,64.08167 164.538153,75.20373 241.442783,26.81949 0,0 81.68172,106.32143 119.81696,119.81701 38.13524,13.49561 53.22161,12.93269 72.52966,-4.27721 26.5251,-23.64272 12.93332,-32.03376 -11.29981,-56.95264 C 462.63737,406.39641 367.36624,311.80489 367.36624,311.80489 415.83487,234.7616 404.57525,134.43793 340.23409,70.055604 303.65396,33.477071 254.04158,12.927621 202.31058,12.927738 Z m 0,39.977841 c 41.12954,2.73e-4 80.57435,16.339295 109.65693,45.422645 60.56221,60.561716 60.56221,158.752186 0,219.313896 -60.56172,60.56224 -158.75227,60.56224 -219.313977,0 -60.562219,-60.56171 -60.562219,-158.75218 0,-219.313896 C 121.73615,69.244874 161.181,52.905813 202.31058,52.905579 Z"
-     sodipodi:nodetypes="cccczszccccccccc"
-     inkscape:export-filename="/home/reza/PROGRAMMING/htdocs/Pencarian-Kasus-Covid19-Indonesia/src/img/favicon.png"
-     inkscape:export-xdpi="6.0783501"
-     inkscape:export-ydpi="6.0783501" />
-  <path
-     d="m 274.45,286.54434 v 49.12806 c -22.67451,9.4477 -47.99439,14.17155 -75.95961,14.17155 -40.18425,0 -70.92079,-12.15603 -92.20964,-36.46812 -21.288842,-24.43809 -31.933264,-59.45757 -31.933264,-105.05852 0,-28.72103 5.227721,-53.85193 15.683201,-75.39271 10.455483,-21.66676 25.445833,-38.231756 44.971093,-49.694976 19.65124,-11.58921 42.64068,-17.38379 68.9683,-17.38379 26.8315,0 53.78894,6.48744 80.87237,19.46231 L 265.94704,132.9246 C 88.786253,68.682494 138.86492,328.58412 274.45,286.54434 Z"
-     style="font-style:normal;font-weight:bold;font-size:99.2732px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';fill:url(#linearGradient43351);fill-opacity:1;stroke-width:5.3433"
-     id="path28753"
-     sodipodi:nodetypes="ccscsccsccc" />
-  <g
-     aria-label="Id"
-     id="text9035"
-     style="font-style:italic;font-size:33.2824px;line-height:1.25;font-family:Baloo;-inkscape-font-specification:'Baloo Italic';fill:#1e303e;stroke-width:0.459553"
-     transform="matrix(2.3219241,0,0,2.3219241,-645.89589,6.4758264)">
-    <path
-       d="M 428.96192,24.358208 V 0.59899569 h 3.88403 V 24.358208 Z"
-       style="font-style:normal;font-weight:600;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold'"
-       id="path38763" />
-    <path
-       d="m 444.7743,24.683231 c -2.24266,0 -3.99237,-0.812559 -5.24912,-2.437676 -1.25676,-1.625117 -1.88514,-3.905698 -1.88514,-6.841743 0,-2.946879 0.6338,-5.238294 1.90139,-6.8742449 1.27843,-1.6467853 3.04439,-2.470178 5.29788,-2.470178 2.36183,0 4.1603,0.8721462 5.39539,2.6164386 h 0.19501 c -0.18418,-1.2892596 0,-2.3076663 0,-3.0552202 v -6.54922189 h 3.55901 l -0.117,20.12958539 c -0.19791,2.619037 -1.56676,3.226823 -2.8524,4.160495 -1.64915,0.965462 -3.88318,1.321765 -6.24502,1.321765 z m 1.02383,-3.087722 c 1.57095,0 2.71395,-0.438782 3.429,-1.316345 0.71505,-0.888397 1.0834,-2.323918 1.10507,-4.306561 v -0.536288 c 0,-2.26433 -0.36836,-3.873196 -1.10507,-4.826598 -0.73672,-0.953402 -1.89055,-1.430103 -3.4615,-1.430103 -1.34343,0 -2.37809,0.5471227 -3.10398,1.641368 -0.72589,1.083411 -1.08883,2.63269 -1.08883,4.647835 0,1.993477 0.35211,3.51567 1.05633,4.566579 0.70422,1.040075 1.76055,1.560113 3.16898,1.560113 z"
-       style="font-style:normal;font-weight:600;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold'"
-       id="path38765"
-       sodipodi:nodetypes="ssscsccsccccssccssscscs" />
-  </g>
+   xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview11"
+     id="namedview7"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.49117647"
-     inkscape:cx="263.65269"
-     inkscape:cy="255.50898"
+     units="px"
+     inkscape:zoom="0.88565124"
+     inkscape:cx="238.80732"
+     inkscape:cy="206.06305"
      inkscape:window-width="1366"
      inkscape:window-height="711"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_1"
-     showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:current-layer="layer1" />
   <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient43349">
-      <stop
-         style="stop-color:#35a7ff;stop-opacity:1;"
-         offset="0"
-         id="stop43345" />
-      <stop
-         style="stop-color:#0a95ff;stop-opacity:1"
-         offset="1"
-         id="stop43347" />
-    </linearGradient>
+     id="defs2">
     <style
-       id="style2">.cls-1{fill-rule:evenodd;}</style>
-    <style
-       id="style2-9">.cls-1{fill-rule:evenodd;}</style>
-    <style
-       id="style1374">.cls-1{fill-rule:evenodd;}</style>
-    <style
-       id="style21144">.cls-1{fill-rule:evenodd;}</style>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient43349"
-       id="linearGradient43351"
-       x1="354.99026"
-       y1="61.411709"
-       x2="408.98944"
-       y2="61.411709"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.8981133,0,0,3.8981133,-1309.4448,-31.544902)" />
+       id="style844">.cls-1{fill-rule:evenodd;}</style>
   </defs>
-  <title
-     id="title6">search-medicine</title>
-  <metadata
-     id="metadata12151">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>search-medicine</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <style
-     type="text/css"
-     id="style1015">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
-  <style
-     type="text/css"
-     id="style11827">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g840"
+       inkscape:export-filename="/home/reza/PROGRAMMING/htdocs/Pencarian-Kasus-Covid19-Indonesia/src/img/favicon.png"
+       inkscape:export-xdpi="7.7644691"
+       inkscape:export-ydpi="7.7644691">
+      <path
+         style="fill:#299d8f;fill-opacity:0.996078;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 6.2801339,61.122959 4.0075148,50.341284 H 20.287344 c 3.53292,0 3.111342,10.18106 6.770612,10.18106 3.65927,0 13.454237,-25.314825 18.451594,-25.792707 4.997357,-0.477882 6.910391,11.637719 12.265318,11.637719 3.650312,0 27.324634,-20.323808 27.324634,-20.323808 L 89.236695,36.310155 87.387857,62.116677 77.26313,77.266141 62.173085,86.895156 38.921243,89.218152 21.891176,82.042649 11.895666,72.542031 Z"
+         id="path4406-0"
+         sodipodi:nodetypes="ccszzsccccccccc" />
+      <path
+         style="fill:#3eccbb;fill-opacity:0.991227;stroke:#ffffff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 4.6525226,37.069714 4.0075148,50.341284 H 20.287344 c 3.53292,0 3.111342,10.18106 6.770612,10.18106 3.65927,0 13.454237,-25.314825 18.451594,-25.792707 4.997357,-0.477882 6.910391,11.637719 12.265318,11.637719 3.480094,0 27.324634,-20.323808 27.324634,-20.323808 L 79.335705,17.473151 66.658283,7.0880223 46.761487,2.1631754 30.199596,5.4434989 18.015103,13.019787 10.721829,22.777628 Z"
+         id="path4406"
+         sodipodi:nodetypes="ccszzscccccccc" />
+      <path
+         id="path850"
+         style="fill:#1a2f38;fill-opacity:1;stroke:none;stroke-width:3.21875;stroke-opacity:1"
+         d="M 176.73633,2.1757812 A 172.5895,172.5895 0 1 0 272.33398,318.44922 l 72.03516,79.375 51.5,-47.08984 -74.70703,-81.40235 A 172.5895,172.5895 0 0 0 176.73633,2.1757812 Z M 144.07617,25.333984 A 153.34137,153.34137 0 0 1 285.14453,66.550781 152.82637,152.82637 0 0 1 330.20703,174.99023 153.34137,153.34137 0 1 1 144.07617,25.333984 Z"
+         transform="scale(0.26458333)" />
+    </g>
+  </g>
 </svg>
