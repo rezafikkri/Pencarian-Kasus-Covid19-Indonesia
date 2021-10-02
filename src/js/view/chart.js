@@ -10,15 +10,6 @@ function renderLineChart() {
             },
             toolbar: { show: false },
         },
-        title: {
-            text: 'Nasional',
-            align: 'left',
-            style: {
-                fontFamily: 'WorkSans Bold',
-                fontSize: '18px',
-                color: '#526166',
-            },
-        },
         series: [
             {
                 name: 'Sembuh',
@@ -29,7 +20,7 @@ function renderLineChart() {
                 data: [120, 400, 300, 500, 900, 700, 1000],
             },
             {
-                name: 'Meniggal',
+                name: 'Meninggal',
                 data: [2, 10, 20, 40, 100, 200, 500],
             },
         ],
@@ -55,6 +46,9 @@ function renderLineChart() {
                     fontFamily: 'WorkSans Regular',
                 },
             },
+            tooltip: {
+                enabled: false,
+            },
         },
         yaxis: {
             labels: {
@@ -65,7 +59,9 @@ function renderLineChart() {
             },
         },
         legend: {
+            fontSize: '14.4px',
             fontFamily: 'WorkSans Regular',
+            offsetY: 7,
             markers: {
                 radius: 4,
             },
@@ -80,6 +76,7 @@ function renderLineChart() {
         },
         tooltip: {
             style: {
+                fontSize: '14.4px',
                 fontFamily: 'WorkSans Regular',
             },
         },
