@@ -1,3 +1,4 @@
+import { Collapse } from 'bootstrap';
 import './img/favicon.ico';
 import './img/logo.png';
 import './font/Work_Sans/OFL.txt';

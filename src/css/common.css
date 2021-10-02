@@ -1,11 +1,13 @@
 :root {
     --pkci-dark: #59696F;
     --pkci-green: #2A9D8F;
+    --pkci-light-green: #F7FBFB;
+    --pkci-bg-light-green: #F2F6F5;
 }
 
 body {
     font-family: 'WorkSans Regular';
-    background-color: #F2F6F5;
+    background-color: var(--pkci-bg-light-green);
 }
 
 header {
