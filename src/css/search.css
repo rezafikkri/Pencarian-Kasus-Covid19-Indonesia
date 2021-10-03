@@ -1,6 +1,6 @@
 .btn-search, .form-search {
-    border-color: var(--pkci-light-green);
-    background-color: var(--pkci-light-green);
+    border-color: var(--pkci-form-bg-light-green);
+    background-color: var(--pkci-form-bg-light-green);
 }
 
 .btn-search:focus, .form-search:focus {

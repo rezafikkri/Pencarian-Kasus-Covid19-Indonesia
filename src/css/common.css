@@ -1,8 +1,11 @@
 :root {
     --pkci-dark: #59696F;
+    --pkci-light-dark: #67757B;
     --pkci-green: #2A9D8F;
-    --pkci-light-green: #F7FBFB;
+    --pkci-form-bg-light-green: #F7FBFB;
     --pkci-bg-light-green: #F2F6F5;
+    --pkci-orange: #E9C46A;
+    --pkci-red: #E76F51;
 }
 
 body {

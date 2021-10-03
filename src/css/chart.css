@@ -11,5 +11,5 @@
 }
 
 .chart p {
-    color: #67757B;
+    color: var(--pkci-light-dark);
 }

@@ -1,6 +1,6 @@
 .accordion-item,
 .accordion-button {
-    background-color: var(--pkci-light-green);
+    background-color: var(--pkci-form-bg-light-green);
 }
 
 .accordion-item {

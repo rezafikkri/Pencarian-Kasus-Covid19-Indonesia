@@ -33,7 +33,7 @@ class PKCIHeader extends HTMLElement {
                 }
 
                 p {
-                    color: #67757B;
+                    color: var(--pkci-light-dark);
                     margin-top: 0;
                     margin-bottom: 1rem;
                 }
