@@ -2,7 +2,7 @@ class PKCICard extends HTMLElement {
     constructor() {
         super();
 
-        this._shadowRoot = this.attachShadow({mode: 'open'});
+        this._shadowRoot = this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
@@ -142,20 +142,8 @@ class PKCICard extends HTMLElement {
         // set case total
         this._total = caseUpdate.total;
         // set case increase
-        this.setIncrease(caseUpdate.increase);
+        this._increase = caseUpdate.increase;
         this.render();
-    }
-
-    setIncrease(increase) {
-        // Generate icon for covid-19 case increase
-        // if increase is positive number
-        if (increase >= 0) {
-            icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/></svg>';
-        } else {
-            icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg';
-        }
-
-        this._increase = increase;
     }
 }
 

@@ -1,30 +1,35 @@
 import ApexCharts from 'apexcharts';
+const id = require("apexcharts/dist/locales/id.json");
 
-function renderLineChart() {
+function renderLineChart(nationalDailyData) {
     const options = {
         chart: {
+            locales: [id],
+            defaultLocale: 'id',
             type: 'area',
             height: 350,
-            zoom: {
-                enabled: false,
+            toolbar: {
+                offsetY: -5,
+                tools: {
+                    download: false,
+                },
             },
-            toolbar: { show: false },
         },
         series: [
             {
                 name: 'Sembuh',
-                data: [2, 20, 50, 120, 600, 200, 700],
+                data: nationalDailyData.heal,
             },
             {
                 name: 'Positif',
-                data: [120, 400, 300, 500, 900, 700, 1000],
+                data: nationalDailyData.positive,
             },
             {
                 name: 'Meninggal',
-                data: [2, 10, 20, 40, 100, 200, 500],
+                data: nationalDailyData.dead,
             },
         ],
-        labels: ['16 Nov', '17 Nov', '18 Nov', '19 Nov', '20 Nov', '21 Nov', '22 Nov'],
+        labels: nationalDailyData.date,
         colors: ['#2A9D8F', '#E9C46A', '#E76F51'],
         fill: {
             gradient: {
@@ -40,10 +45,17 @@ function renderLineChart() {
             width: 3,
         },
         xaxis: {
+            type: 'datetime',
             labels: {
+                rotate: 0,
                 style: {
                     colors: '#78909c',
                     fontFamily: 'WorkSans Regular',
+                },
+                datetimeFormatter: {
+                    year: 'yyyy',
+                    month: 'MMM',
+                    day: 'dd MMM',
                 },
             },
             tooltip: {
@@ -55,6 +67,9 @@ function renderLineChart() {
                 style: {
                     colors: '#78909c',
                     fontFamily: 'WorkSans Regular',
+                },
+                formatter: (val, index) => {
+                    return new Intl.NumberFormat('id').format(val);
                 },
             },
         },
@@ -78,6 +93,9 @@ function renderLineChart() {
             style: {
                 fontSize: '14.4px',
                 fontFamily: 'WorkSans Regular',
+            },
+            x: {
+                format: 'dd MMMM yyyy',
             },
         },
     };
