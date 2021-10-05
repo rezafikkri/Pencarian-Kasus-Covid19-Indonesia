@@ -1,21 +1,21 @@
 class NationalDaily {
-    async getCovid19CaseData() {
+    async getCovid19Case() {
         try {
             const response = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian');
             const responseJson = await response.json();
 
             // grouping data
-            const covid19CaseData = { heal: [], positive: [], dead: [], date: [] };
+            const covid19Case = { heal: [], positive: [], dead: [], date: [] };
             for (const value of responseJson) {
-                covid19CaseData.heal.push(value.sembuh);
-                covid19CaseData.positive.push(value.positif);
-                covid19CaseData.dead.push(value.meninggal);
-                covid19CaseData.date.push(value.lastUpdate);
+                covid19Case.heal.push(value.sembuh);
+                covid19Case.positive.push(value.positif);
+                covid19Case.dead.push(value.meninggal);
+                covid19Case.date.push(value.lastUpdate);
             }
 
-            return covid19CaseData;
+            return covid19Case;
         } catch (error) {
-            return { error };
+            return { errorMessage: error.message, errorName: 'DailyError' };
         }
     }
 }

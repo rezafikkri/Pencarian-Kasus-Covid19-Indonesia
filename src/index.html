@@ -23,7 +23,7 @@
                         <option value="Los Angeles">
                         <option value="Chicago">
                     </datalist>
-                    <button class="btn btn-search" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
+                    <button class="btn btn-search" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
                 </div>
 
                 <div class="chart mb-3">
@@ -32,21 +32,21 @@
                     <div id="chart"></div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-3" id="covid19CaseCard">
                     <div class="col-md-4 mb-2 mb-md-0">
-                        <pkci-card title="Total sembuh" type="card-green"></pkci-card>
+                        <pkci-card title="Total sembuh" type="card-green" id="heal"></pkci-card>
                     </div>
 
                     <div class="col-md-4 mb-2 mb-md-0">
-                        <pkci-card title="Total positif" type="card-orange"></pkci-card>
+                        <pkci-card title="Total positif" type="card-orange" id="positive"></pkci-card>
                     </div>
 
                     <div class="col-md-4">
-                        <pkci-card title="Total meninggal" type="card-red"></pkci-card>
+                        <pkci-card title="Total meninggal" type="card-red" id="dead"></pkci-card>
                     </div>
                 </div>
 
-                <div class="accordion accordion-flush mb-5" id="covid19CaseDetail">
+                <div class="accordion accordion-flush d-none" id="covid19CaseDetail">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -80,6 +80,7 @@
             </main>
 
             <footer>
+                <p class="mt-5" id="lastUpdate">Terakhir diperbaharui: -</p>
                 <p>
                     Sumber data:
                     <a href="https://github.com/Reynadi531/api-covid19-indonesia-v2" target="_blank" rel="noreferrer noopener">

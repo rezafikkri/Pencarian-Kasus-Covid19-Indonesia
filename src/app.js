@@ -1,5 +1,5 @@
 // bootstrap plugin
-import { Collapse } from 'bootstrap';
+import { Collapse, Alert } from 'bootstrap';
 
 // assets
 import './img/favicon.ico';
