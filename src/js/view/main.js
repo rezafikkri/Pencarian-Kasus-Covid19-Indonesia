@@ -20,6 +20,9 @@ async function main() {
         renderLineChart(nationalDailyData);
     }
 
+    // show daily Covid19 case chart
+    document.querySelector('#dailyCovid19CaseChart').classList.remove('d-none');
+
     /* show national cumulative covid19 data to card */
     const nationalCumulativeObj = new NationalCumulative();
     const nationalCumulativeData = await nationalCumulativeObj.getCovid19Case();
@@ -47,11 +50,20 @@ async function main() {
         increase: numberFormat.format(nationalCumulativeData.penambahan.meninggal),
     };
 
+    // show Covid19 case card
+    document.querySelector('#covid19CaseCard').classList.remove('d-none');
+
     /* show last update */
     const date = new Date(nationalCumulativeData.total.lastUpdate);
     const monthNames = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
     const lastUpdateElement = document.querySelector('#lastUpdate');
     lastUpdateElement.innerText = `Terakhir diperbaharui: ${date.getDate()} ${monthNames[date.getMonth()]} ${date.getFullYear()}`;
+
+    // show last update
+    document.querySelector('#lastUpdate').classList.remove('d-none');
+
+    // hide loading
+    document.querySelector('#loading').classList.add('d-none');
 }
 
 function mainSearch() {
