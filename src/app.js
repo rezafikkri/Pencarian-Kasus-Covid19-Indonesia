@@ -1,9 +1,10 @@
+import regeneratorRuntime from "regenerator-runtime";
+
 // bootstrap plugin
 import { Collapse, Alert } from 'bootstrap';
 
 // assets
 import './img/favicon.ico';
-import './img/logo.png';
 import './font/Work_Sans/OFL.txt';
 
 // css
@@ -16,3 +17,5 @@ import './js/component/pkci_header.js';
 import { main, mainSearch } from './js/view/main.js';
 
 document.addEventListener('DOMContentLoaded', main);
+
+document.querySelector('#searchCovid19Case button').addEventListener('click', mainSearch);

@@ -17,3 +17,8 @@
     border-color: var(--pkci-green);
     color: #fff;
 }
+
+.form-search:disabled {
+    background-color: var(--pkci-form-bg-light-green);
+    opacity: .65;
+}

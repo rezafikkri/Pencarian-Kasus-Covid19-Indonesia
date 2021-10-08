@@ -6,7 +6,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
-        clean: true,
     },
     module: {
         rules: [
@@ -27,14 +26,7 @@ module.exports = {
                 generator: {
                     filename: '[base]',
                 },
-            },
-            {
-                test: /\.png$/,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'img/[base]',
-                },
-            },
+            }
         ],
     },
     plugins: [

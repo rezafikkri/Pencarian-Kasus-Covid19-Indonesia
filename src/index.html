@@ -16,13 +16,7 @@
             <main>
                 <div class="input-group mt-3 mb-3" id="searchCovid19Case">
                     <input class="form-control form-search" list="datalistProvince" placeholder="Masukkan nama Provinsi...">
-                    <datalist id="datalistProvince">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
+                    <datalist id="datalistProvince"></datalist>
                     <button class="btn btn-search" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
                 </div>
 
@@ -55,10 +49,7 @@
                         </h2>
 
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#covid19CaseDetail">
-                            <div class="accordion-body">
-                                <p>Laki-laki : 2000</p>
-                                <p class="m-0">Perempuan : 4000</p>
-                            </div>
+                            <div class="accordion-body" id="gender">-</div>
                         </div>
                     </div>
 
@@ -70,28 +61,28 @@
                         </h2>
 
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#covid19CaseDetail">
-                            <div class="accordion-body">
-                                <p>0-5 tahun : 492</p>
-                                <p class="m-0">6-18 tahun : 2165</p>
-                            </div>
+                            <div class="accordion-body" id="ageGroup">-</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center mt-5 mb-5" id="loading">
+                <div class="d-flex justify-content-center mt-5" id="loading">
                     <div class="loading"><div></div></div>
                 </div>
             </main>
 
             <footer>
-                <p class="mt-5 d-none" id="lastUpdate">Terakhir diperbaharui: -</p>
+                <p class="mt-5" id="lastUpdate">Terakhir diperbaharui: -</p>
                 <p>
                     Sumber data:
                     <a href="https://github.com/Reynadi531/api-covid19-indonesia-v2" target="_blank" rel="noreferrer noopener">
                         github.com/Reynadi531/api-covid19-indonesia-v2
                     </a>
                 </p>
-                <p class="text-muted">&copy; 2021 Reza Sariful Fikri</p>
+                <p class="text-muted">
+                    &copy; 2021
+                    <a href="https://github.com/rezafikkri" target="_blank" rel="noreferrer noopener">Reza Sariful Fikri</a>
+                </p>
             </footer>
         </div><!-- Container -->
     </body>
