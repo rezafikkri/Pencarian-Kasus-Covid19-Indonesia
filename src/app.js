@@ -1,4 +1,4 @@
-import regeneratorRuntime from "regenerator-runtime";
+import regeneratorRuntime from 'regenerator-runtime';
 
 // bootstrap plugin
 import { Collapse, Alert } from 'bootstrap';
@@ -11,10 +11,10 @@ import './font/Work_Sans/OFL.txt';
 import './css/main.css';
 
 // component
-import './js/component/pkci_header.js';
+import './js/component/pkci_header';
 
 // view
-import { main, mainSearch } from './js/view/main.js';
+import { main, mainSearch } from './js/view/main';
 
 document.addEventListener('DOMContentLoaded', main);
 

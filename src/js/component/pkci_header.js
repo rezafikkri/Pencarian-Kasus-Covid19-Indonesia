@@ -2,7 +2,7 @@ class PKCIHeader extends HTMLElement {
     constructor() {
         super();
 
-       this._shadowRoot = this.attachShadow({ mode: 'open' });
+        this.shadow = this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
@@ -10,7 +10,7 @@ class PKCIHeader extends HTMLElement {
     }
 
     render() {
-        this._shadowRoot.innerHTML = `
+        this.shadow.innerHTML = `
             <style>
                 * {
                     box-sizing: border-box;

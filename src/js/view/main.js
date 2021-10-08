@@ -1,15 +1,15 @@
 // view
-import renderLineChart from './chart.js';
-import renderAlert from './alert.js';
+import renderLineChart from './chart';
+import renderAlert from './alert';
 
 // component
-import '../component/pkci_card.js';
+import '../component/pkci_card';
 
 // data
-import NationalDaily from '../data/NationalDaily.js';
-import NationalCumulative from '../data/NationalCumulative.js';
-import ProvinceCumulative from '../data/ProvinceCumulative.js';
-import provinceNames from '../data/provinceNames.js';
+import NationalDaily from '../data/NationalDaily';
+import NationalCumulative from '../data/NationalCumulative';
+import ProvinceCumulative from '../data/ProvinceCumulative';
+import provinceNames from '../data/provinceNames';
 
 function showCovid19CaseToCard(
     totalHeal,
@@ -90,7 +90,6 @@ async function main() {
 
         // hide loading
         document.querySelector('#loading').classList.add('d-none');
-
     } else {
         showCovid19CaseToCard(
             nationalCumulativeData.total.sembuh,

@@ -5,7 +5,12 @@ class NationalDaily {
             const responseJson = await response.json();
 
             // grouping data
-            const covid19Case = { heal: [], positive: [], dead: [], date: [] };
+            const covid19Case = {
+                heal: [],
+                positive: [],
+                dead: [],
+                date: [],
+            };
             for (const value of responseJson) {
                 covid19Case.heal.push(value.sembuh);
                 covid19Case.positive.push(value.positif);

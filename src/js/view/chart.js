@@ -1,5 +1,5 @@
 import ApexCharts from 'apexcharts';
-const id = require("apexcharts/dist/locales/id.json");
+import id from 'apexcharts/dist/locales/id.json';
 
 function renderLineChart(nationalDailyData) {
     const options = {
@@ -33,7 +33,7 @@ function renderLineChart(nationalDailyData) {
         colors: ['#2A9D8F', '#E9C46A', '#E76F51'],
         fill: {
             gradient: {
-                opacityFrom: .7,
+                opacityFrom: 0.7,
                 opacityTo: 0,
             },
         },
@@ -68,9 +68,7 @@ function renderLineChart(nationalDailyData) {
                     colors: '#78909c',
                     fontFamily: 'WorkSans Regular',
                 },
-                formatter: (val, index) => {
-                    return new Intl.NumberFormat('id').format(val);
-                },
+                formatter: (val) => new Intl.NumberFormat('id').format(val),
             },
         },
         legend: {
@@ -100,7 +98,7 @@ function renderLineChart(nationalDailyData) {
         },
     };
 
-    const chart = new ApexCharts(document.querySelector("#chart"), options);
+    const chart = new ApexCharts(document.querySelector('#chart'), options);
     chart.render();
 }
 

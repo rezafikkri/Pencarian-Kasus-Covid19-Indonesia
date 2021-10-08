@@ -6,7 +6,7 @@ class ProvinceCumulative {
 
             // if provinsi not found
             if (responseJson.length === 0) {
-                return { errorMessage: `Kasus Covid-19 di provinsi <b>${province}</b> tidak ditemukan.`, errorName: 'CumulativeError' };
+                return { errorMessage: `Kasus covid-19 di provinsi <b>${province}</b> tidak ditemukan.`, errorName: 'CumulativeError' };
             }
 
             return responseJson;
