@@ -62,16 +62,14 @@ function showLastUpdate(lastUpdate) {
 async function main() {
     /* show province names to datalist */
     const datalistProvinceElement = document.querySelector('datalist#datalistProvince');
-    let optionProvince;
-    for (const pn of provinceNames) {
+    let optionProvince = '';
+    provinceNames.forEach((pn) => {
         optionProvince += `<option value="${pn}"></option>`;
-    }
+    });
     datalistProvinceElement.innerHTML = optionProvince;
 
     /* show national daily covid19 case data to chart */
-    const nationalDailyObj = new NationalDaily();
-    const nationalDailyData = await nationalDailyObj.getCovid19Case();
-
+    const nationalDailyData = await NationalDaily.getCovid19Case();
     if (nationalDailyData.errorMessage) {
         renderAlert(nationalDailyData.errorMessage, nationalDailyData.errorName);
     } else {
@@ -82,9 +80,7 @@ async function main() {
     document.querySelector('#dailyCovid19CaseChart').classList.remove('d-none');
 
     /* show national cumulative covid19 case data to card */
-    const nationalCumulativeObj = new NationalCumulative();
-    const nationalCumulativeData = await nationalCumulativeObj.getCovid19Case();
-
+    const nationalCumulativeData = await NationalCumulative.getCovid19Case();
     if (nationalCumulativeData.errorMessage) {
         renderAlert(nationalCumulativeData.errorMessage, nationalCumulativeData.errorName);
 
@@ -146,61 +142,56 @@ async function mainSearch() {
         // enabled search
         searchButtonElement.removeAttribute('disabled', '');
         searchInputElement.removeAttribute('disabled', '');
+    } else {
+        const provinceCumulativeData = await ProvinceCumulative.getCovid19Case(province);
+        // if error exists
+        if (provinceCumulativeData.errorMessage) {
+            renderAlert(provinceCumulativeData.errorMessage, provinceCumulativeData.errorName);
 
-        return false;
+            // hide loading
+            document.querySelector('#loading').classList.add('d-none');
+            // enabled search
+            searchButtonElement.removeAttribute('disabled', '');
+            searchInputElement.removeAttribute('disabled', '');
+        } else {
+            showCovid19CaseToCard(
+                provinceCumulativeData[0].sembuh,
+                provinceCumulativeData[0].penambahan.sembuh,
+                provinceCumulativeData[0].kasus,
+                provinceCumulativeData[0].penambahan.positif,
+                provinceCumulativeData[0].meninggal,
+                provinceCumulativeData[0].penambahan.meninggal,
+            );
+
+            // show Covid19 case card
+            covid19CaseCardElement.classList.remove('d-none');
+
+            // show covid19 case detail to accordion
+            const numberFormat = new Intl.NumberFormat('id');
+            covid19CaseDetailElement.querySelector('#gender').innerHTML = `
+                <p>Laki-laki : ${numberFormat.format(provinceCumulativeData[0].jenis_kelamin['laki-laki'])}</p>
+                <p class="m-0">Perempuan : ${numberFormat.format(provinceCumulativeData[0].jenis_kelamin.perempuan)}</p>
+            `;
+            covid19CaseDetailElement.querySelector('#ageGroup').innerHTML = `
+                <p>0-5 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['0-5'])}</p>
+                <p>6-18 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['6-18'])}</p>
+                <p>19-30 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['19-30'])}</p>
+                <p>31-45 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['31-45'])}</p>
+                <p>46-59 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['46-59'])}</p>
+                <p class="m-0">≥ 60 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['≥ 60'])}</p>
+            `;
+            covid19CaseDetailElement.classList.remove('d-none');
+
+            // show last update
+            showLastUpdate(provinceCumulativeData[0].last_date);
+
+            // hide loading
+            document.querySelector('#loading').classList.add('d-none');
+            // enabled search
+            searchButtonElement.removeAttribute('disabled', '');
+            searchInputElement.removeAttribute('disabled', '');
+        }
     }
-
-    const provinceCumulativeObj = new ProvinceCumulative();
-    const provinceCumulativeData = await provinceCumulativeObj.getCovid19Case(province);
-
-    if (provinceCumulativeData.errorMessage) {
-        renderAlert(provinceCumulativeData.errorMessage, provinceCumulativeData.errorName);
-
-        // hide loading
-        document.querySelector('#loading').classList.add('d-none');
-        // enabled search
-        searchButtonElement.removeAttribute('disabled', '');
-        searchInputElement.removeAttribute('disabled', '');
-
-        return false;
-    }
-
-    showCovid19CaseToCard(
-        provinceCumulativeData[0].sembuh,
-        provinceCumulativeData[0].penambahan.sembuh,
-        provinceCumulativeData[0].kasus,
-        provinceCumulativeData[0].penambahan.positif,
-        provinceCumulativeData[0].meninggal,
-        provinceCumulativeData[0].penambahan.meninggal,
-    );
-
-    // show Covid19 case card
-    covid19CaseCardElement.classList.remove('d-none');
-
-    // show covid19 case detail to accordion
-    const numberFormat = new Intl.NumberFormat('id');
-    covid19CaseDetailElement.querySelector('#gender').innerHTML = `
-        <p>Laki-laki : ${numberFormat.format(provinceCumulativeData[0].jenis_kelamin['laki-laki'])}</p>
-        <p class="m-0">Perempuan : ${numberFormat.format(provinceCumulativeData[0].jenis_kelamin.perempuan)}</p>
-    `;
-    covid19CaseDetailElement.querySelector('#ageGroup').innerHTML = `
-        <p>0-5 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['0-5'])}</p>
-        <p>6-18 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['6-18'])}</p>
-        <p>19-30 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['19-30'])}</p>
-        <p>31-45 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['31-45'])}</p>
-        <p>46-59 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['46-59'])}</p>
-        <p class="m-0">≥ 60 tahun : ${numberFormat.format(provinceCumulativeData[0].kelompok_umur['≥ 60'])}</p>
-    `;
-    covid19CaseDetailElement.classList.remove('d-none');
-
-    // show last update
-    showLastUpdate(provinceCumulativeData[0].last_date);
-
-    // hide loading
-    document.querySelector('#loading').classList.add('d-none');
-    // enabled search
-    searchButtonElement.removeAttribute('disabled', '');
-    searchInputElement.removeAttribute('disabled', '');
 }
 
 export { main, mainSearch };

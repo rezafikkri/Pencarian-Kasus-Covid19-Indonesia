@@ -1,5 +1,5 @@
 class NationalDaily {
-    async getCovid19Case() {
+    static async getCovid19Case() {
         try {
             const response = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian');
             const responseJson = await response.json();
@@ -11,12 +11,12 @@ class NationalDaily {
                 dead: [],
                 date: [],
             };
-            for (const value of responseJson) {
+            responseJson.forEach((value) => {
                 covid19Case.heal.push(value.sembuh);
                 covid19Case.positive.push(value.positif);
                 covid19Case.dead.push(value.meninggal);
                 covid19Case.date.push(value.lastUpdate);
-            }
+            });
 
             return covid19Case;
         } catch (error) {
